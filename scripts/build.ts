@@ -6,7 +6,7 @@ const { values } = parseArgs({
     output: {
       type: "string",
       short: "o",
-      default: "dist/aws-external-anthropic-token-generator-cli",
+      default: "build/aws-external-anthropic-token-generator-cli",
     },
     target: {
       type: "string",
@@ -37,7 +37,7 @@ if (process.env.CI) {
   const results = await Promise.all(
     targets.map((target) =>
       build({
-        outfile: `dist/aws-external-anthropic-token-generator-cli-${target}`,
+        outfile: `build/aws-external-anthropic-token-generator-cli-${target}`,
         target,
       })
     )
