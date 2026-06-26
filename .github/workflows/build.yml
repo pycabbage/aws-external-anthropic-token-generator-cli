@@ -34,6 +34,7 @@ jobs:
       - uses: actions/download-artifact@v8
         with:
           name: build
+          path: build/
       - uses: softprops/action-gh-release@v3
         with:
           files: build/*
