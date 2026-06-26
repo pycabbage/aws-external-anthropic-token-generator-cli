@@ -36,4 +36,4 @@ jobs:
           name: build
       - uses: softprops/action-gh-release@v3
         with:
-          files: build/
+          files: build/*
