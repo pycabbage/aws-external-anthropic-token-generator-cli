@@ -2,6 +2,7 @@
   "name": "aws-external-anthropic-token-generator-cli",
   "module": "src/index.ts",
   "type": "module",
+  "version": "v0.0.1",
   "scripts": {
     "lint": "biome check",
     "prepare": "husky"
